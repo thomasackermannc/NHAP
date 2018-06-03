@@ -1,3 +1,122 @@
+def nombredrag(nombre):
+    nombre = list(nombre)
+    inicial = nombre[0]
+    drag = 0
+    if inicial.upper == "A":
+        drag = "Peaches"
+    elif inicial.upper == "B":
+        drag = "Backroll"
+    elif inicial.upper == "C":
+        drag = "Orgazma"
+    elif inicial.upper == "D":
+        drag = ""
+    elif inicial.upper == "E":
+        drag = ""
+    elif inicial.upper == "F":
+        drag = ""
+    elif inicial.upper == "G":
+        drag = ""
+    elif inicial.upper == "H":
+        drag = ""
+    elif inicial.upper == "I":
+        drag = ""
+    elif inicial.upper == "J":
+        drag = ""
+    elif inicial.upper == "K":
+        drag = ""
+    elif inicial.upper == "L":
+        drag = ""
+    elif inicial.upper == "M":
+        drag = ""
+    elif inicial.upper == "N":
+        drag = ""
+    elif inicial.upper == "O":
+        drag = ""
+    elif inicial.upper == "P":
+        drag = ""
+    elif inicial.upper == "Q":
+        drag = ""
+    elif inicial.upper == "R":
+        drag = ""
+    elif inicial.upper == "S":
+        drag = ""
+    elif inicial.upper == "T":
+        drag = ""
+    elif inicial.upper == "U":
+        drag = ""
+    elif inicial.upper == "V":
+        drag = ""
+    elif inicial.upper == "W":
+        drag = ""
+    elif inicial.upper == "X":
+        drag = ""
+    elif inicial.upper == "Y":
+        drag = ""
+    elif inicial.upper == "Z":
+        drag = ""
+    return drag
+
+def apellidodrag(apellido):
+    apellido = list(apellido)
+    inicial = apellido[0]
+    drag = 0
+    if inicial.upper == "A":
+        drag = ""
+    elif inicial.upper == "B":
+        drag = ""
+    elif inicial.upper == "C":
+        drag = ""
+    elif inicial.upper == "D":
+        drag = ""
+    elif inicial.upper == "E":
+        drag = ""
+    elif inicial.upper == "F":
+        drag = ""
+    elif inicial.upper == "G":
+        drag = ""
+    elif inicial.upper == "H":
+        drag = ""
+    elif inicial.upper == "I":
+        drag = ""
+    elif inicial.upper == "J":
+        drag = ""
+    elif inicial.upper == "K":
+        drag = ""
+    elif inicial.upper == "L":
+        drag = ""
+    elif inicial.upper == "M":
+        drag = ""
+    elif inicial.upper == "N":
+        drag = ""
+    elif inicial.upper == "O":
+        drag = ""
+    elif inicial.upper == "P":
+        drag = ""
+    elif inicial.upper == "Q":
+        drag = ""
+    elif inicial.upper == "R":
+        drag = ""
+    elif inicial.upper == "S":
+        drag = ""
+    elif inicial.upper == "T":
+        drag = ""
+    elif inicial.upper == "U":
+        drag = ""
+    elif inicial.upper == "V":
+        drag = ""
+    elif inicial.upper == "W":
+        drag = ""
+    elif inicial.upper == "X":
+        drag = ""
+    elif inicial.upper == "Y":
+        drag = ""
+    elif inicial.upper == "Z":
+        drag = ""
+    return drag
+
 nombre = input("Nombre: ")
 apellido = input("Apellido: ")
-nacimiento = input("Fecha de nacimiento DD/MM/AA: ")
+nacimiento = input("Año en que naciste: ")
+
+print("")
+print(nombredrag(nombre),apellidodrag(apellido))
