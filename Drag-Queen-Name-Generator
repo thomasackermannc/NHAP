@@ -113,10 +113,35 @@ def apellidodrag(apellido):
     elif inicial.upper == "Z":
         drag = ""
     return drag
+    
+def nacimientodrag(nacimiento):
+    ultnum = nacimiento % 10
+    drag = 0
+    if ultnum == 0:
+        drag = ""
+    elif ultnum == 1:
+        drag = ""
+    elif ultnum == 2:
+        drag = ""
+    elif ultnum == 3:
+        drag = ""
+    elif ultnum == 4:
+        drag = ""
+    elif ultnum == 5:
+        drag = ""
+    elif ultnum == 6:
+        drag = ""
+    elif ultnum == 7:
+        drag = ""
+    elif ultnum == 8:
+        drag = ""
+    else:
+        drag = ""
+    return drag
 
 nombre = input("Nombre: ")
 apellido = input("Apellido: ")
-nacimiento = input("Año en que naciste: ")
+nacimiento = int(input("Año en que naciste: "))
 
 print("")
-print(nombredrag(nombre),apellidodrag(apellido))
+print(nombredrag(nombre),apellidodrag(apellido),nacimientodrag(nacimiento)
