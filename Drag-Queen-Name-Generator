@@ -1,147 +1,143 @@
 def nombredrag(nombre):
     nombre = list(nombre)
     inicial = nombre[0]
-    drag = 0
+    nombre = 0
     if inicial.upper == "A":
-        drag = "Peaches"
+        drag1 = "Peaches"
     elif inicial.upper == "B":
-        drag = "Backroll"
+        drag1 = "Backroll"
     elif inicial.upper == "C":
-        drag = "Orgazma"
+        drag1 = "Candy"
     elif inicial.upper == "D":
-        drag = ""
+        drag1 = "Diamond"
     elif inicial.upper == "E":
-        drag = ""
+        drag1 = "Eve"
     elif inicial.upper == "F":
-        drag = ""
+        drag1 = "Fur"
     elif inicial.upper == "G":
-        drag = ""
+        drag1 = "Ginger"
     elif inicial.upper == "H":
-        drag = ""
+        drag1 = "Holly"
     elif inicial.upper == "I":
-        drag = ""
+        drag1 = "Ivy"
     elif inicial.upper == "J":
-        drag = ""
+        drag1 = "Jade"
     elif inicial.upper == "K":
-        drag = ""
+        drag1 = "Koko"
     elif inicial.upper == "L":
-        drag = ""
+        drag1 = "Lemon"
     elif inicial.upper == "M":
-        drag = ""
+        drag1 = "Marshmallow"
     elif inicial.upper == "N":
-        drag = ""
+        drag1 = "Nibbles"
     elif inicial.upper == "O":
-        drag = ""
+        drag1 = "Orgazma"
     elif inicial.upper == "P":
-        drag = ""
+        drag1 = "Pussy"
     elif inicial.upper == "Q":
-        drag = ""
+        drag1 = "Sequence"
     elif inicial.upper == "R":
-        drag = ""
+        drag1 = "Ru"
     elif inicial.upper == "S":
-        drag = ""
+        drag1 = "Stinx"
     elif inicial.upper == "T":
-        drag = ""
+        drag1 = "Tyra"
     elif inicial.upper == "U":
-        drag = ""
+        drag1 = "Uriel"
     elif inicial.upper == "V":
-        drag = ""
+        drag1 = "Venus"
     elif inicial.upper == "W":
-        drag = ""
+        drag1 = "Widow"
     elif inicial.upper == "X":
-        drag = ""
+        drag1 = "Miss"
     elif inicial.upper == "Y":
-        drag = ""
+        drag1 = "Yara"
     elif inicial.upper == "Z":
-        drag = ""
-    return drag
+        drag1 = "Lady"
+    return drag1
 
 def apellidodrag(apellido):
     apellido = list(apellido)
     inicial = apellido[0]
-    drag = 0
     if inicial.upper == "A":
-        drag = ""
+        return "Davenport"
     elif inicial.upper == "B":
-        drag = ""
+        return "Milan"
     elif inicial.upper == "C":
-        drag = ""
+        return "D-lite"
     elif inicial.upper == "D":
-        drag = ""
+        return "Sofia"
     elif inicial.upper == "E":
-        drag = ""
+        return "Tration"
     elif inicial.upper == "F":
-        drag = ""
+        return "Parker"
     elif inicial.upper == "G":
-        drag = ""
+        return "Crawford"
     elif inicial.upper == "H":
-        drag = ""
+        return "Fame"
     elif inicial.upper == "I":
-        drag = ""
+        return "Ho"
     elif inicial.upper == "J":
-        drag = ""
+        return "Jiggly"
     elif inicial.upper == "K":
-        drag = ""
+        return "Davis"
     elif inicial.upper == "L":
-        drag = ""
+        return "Mattel"
     elif inicial.upper == "M":
-        drag = ""
+        return "Glasscock"
     elif inicial.upper == "N":
-        drag = ""
+        return "Bottoms"
     elif inicial.upper == "O":
-        drag = ""
+        return "Cox"
     elif inicial.upper == "P":
-        drag = ""
+        return "Dinners"
     elif inicial.upper == "Q":
-        drag = ""
+        return "Fingertist"
     elif inicial.upper == "R":
-        drag = ""
+        return "Hyde"
     elif inicial.upper == "S":
-        drag = ""
+        return "Royale"
     elif inicial.upper == "T":
-        drag = ""
+        return "Edwards"
     elif inicial.upper == "U":
-        drag = ""
+        return "Monsoon"
     elif inicial.upper == "V":
-        drag = ""
+        return "Peggy"
     elif inicial.upper == "W":
-        drag = ""
+        return "Sunny"
     elif inicial.upper == "X":
-        drag = ""
+        return "Estranja"
     elif inicial.upper == "Y":
-        drag = ""
+        return "Roma"
     elif inicial.upper == "Z":
-        drag = ""
-    return drag
-    
+        return "Lima"
+
 def nacimientodrag(nacimiento):
     ultnum = nacimiento % 10
-    drag = 0
     if ultnum == 0:
-        drag = ""
+        drag3 = "I'm every woman by Chaka Khan"
     elif ultnum == 1:
-        drag = ""
+        drag3 = "Rabiosa by Shakira"
     elif ultnum == 2:
-        drag = ""
+        drag3 = "Poker face by Lady Gaga"
     elif ultnum == 3:
-        drag = ""
+        drag3 = "Believe by Cher"
     elif ultnum == 4:
-        drag = ""
+        drag3 = "Break free by Ariana Grande"
     elif ultnum == 5:
-        drag = ""
+        drag3 = "Whip my hair by Willow Smith"
     elif ultnum == 6:
-        drag = ""
+        drag3 = "I will survive by Gloria Garner"
     elif ultnum == 7:
-        drag = ""
+        drag3 = "It's raining man by Martha Wash ans Rupaul"
     elif ultnum == 8:
-        drag = ""
+        drag3 = "Shut up and drive by Rihanna"
     else:
-        drag = ""
-    return drag
+        drag3 = "Toxic by Britney Spears"
+    return drag3
 
 nombre = input("Nombre: ")
 apellido = input("Apellido: ")
 nacimiento = int(input("Año en que naciste: "))
 
-print("")
-print(nombredrag(nombre),apellidodrag(apellido),nacimientodrag(nacimiento)
+print(nombredrag(nombre), apellidodrag(apellido),'\n', "Canción que te representa:", nacimientodrag(nacimiento))
