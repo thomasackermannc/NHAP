@@ -1,115 +1,115 @@
+import random
 def nombredrag(nombre):
-    nombre = list(nombre)
-    inicial = nombre[0]
-    nombre = 0
-    if inicial.upper == "A":
+    n2 = nombre.upper()
+    inicial = n2[0]
+    if inicial == "A":
         drag1 = "Peaches"
-    elif inicial.upper == "B":
+    elif inicial == "B":
         drag1 = "Backroll"
-    elif inicial.upper == "C":
+    elif inicial == "C":
         drag1 = "Candy"
-    elif inicial.upper == "D":
+    elif inicial == "D":
         drag1 = "Diamond"
-    elif inicial.upper == "E":
+    elif inicial == "E":
         drag1 = "Eve"
-    elif inicial.upper == "F":
+    elif inicial == "F":
         drag1 = "Fur"
-    elif inicial.upper == "G":
+    elif inicial == "G":
         drag1 = "Ginger"
-    elif inicial.upper == "H":
+    elif inicial == "H":
         drag1 = "Holly"
-    elif inicial.upper == "I":
+    elif inicial == "I":
         drag1 = "Ivy"
-    elif inicial.upper == "J":
+    elif inicial == "J":
         drag1 = "Jade"
-    elif inicial.upper == "K":
+    elif inicial == "K":
         drag1 = "Koko"
-    elif inicial.upper == "L":
+    elif inicial == "L":
         drag1 = "Lemon"
-    elif inicial.upper == "M":
+    elif inicial == "M":
         drag1 = "Marshmallow"
-    elif inicial.upper == "N":
+    elif inicial == "N":
         drag1 = "Nibbles"
-    elif inicial.upper == "O":
+    elif inicial == "O":
         drag1 = "Orgazma"
-    elif inicial.upper == "P":
+    elif inicial == "P":
         drag1 = "Pussy"
-    elif inicial.upper == "Q":
+    elif inicial == "Q":
         drag1 = "Sequence"
-    elif inicial.upper == "R":
+    elif inicial == "R":
         drag1 = "Ru"
-    elif inicial.upper == "S":
+    elif inicial == "S":
         drag1 = "Stinx"
-    elif inicial.upper == "T":
+    elif inicial == "T":
         drag1 = "Tyra"
-    elif inicial.upper == "U":
+    elif inicial == "U":
         drag1 = "Uriel"
-    elif inicial.upper == "V":
+    elif inicial == "V":
         drag1 = "Venus"
-    elif inicial.upper == "W":
+    elif inicial == "W":
         drag1 = "Widow"
-    elif inicial.upper == "X":
+    elif inicial == "X":
         drag1 = "Miss"
-    elif inicial.upper == "Y":
+    elif inicial == "Y":
         drag1 = "Yara"
-    elif inicial.upper == "Z":
+    else:
         drag1 = "Lady"
     return drag1
 
 def apellidodrag(apellido):
-    apellido = list(apellido)
-    inicial = apellido[0]
-    if inicial.upper == "A":
+    a2 = apellido.upper()
+    inicial = a2[0]
+    if inicial == "A":
         return "Davenport"
-    elif inicial.upper == "B":
+    elif inicial == "B":
         return "Milan"
-    elif inicial.upper == "C":
+    elif inicial == "C":
         return "D-lite"
-    elif inicial.upper == "D":
+    elif inicial == "D":
         return "Sofia"
-    elif inicial.upper == "E":
+    elif inicial == "E":
         return "Tration"
-    elif inicial.upper == "F":
+    elif inicial == "F":
         return "Parker"
-    elif inicial.upper == "G":
+    elif inicial == "G":
         return "Crawford"
-    elif inicial.upper == "H":
+    elif inicial == "H":
         return "Fame"
-    elif inicial.upper == "I":
+    elif inicial == "I":
         return "Ho"
-    elif inicial.upper == "J":
+    elif inicial == "J":
         return "Jiggly"
-    elif inicial.upper == "K":
+    elif inicial == "K":
         return "Davis"
-    elif inicial.upper == "L":
+    elif inicial == "L":
         return "Mattel"
-    elif inicial.upper == "M":
+    elif inicial == "M":
         return "Glasscock"
-    elif inicial.upper == "N":
+    elif inicial == "N":
         return "Bottoms"
-    elif inicial.upper == "O":
+    elif inicial == "O":
         return "Cox"
-    elif inicial.upper == "P":
+    elif inicial == "P":
         return "Dinners"
-    elif inicial.upper == "Q":
+    elif inicial == "Q":
         return "Fingertist"
-    elif inicial.upper == "R":
+    elif inicial == "R":
         return "Hyde"
-    elif inicial.upper == "S":
+    elif inicial == "S":
         return "Royale"
-    elif inicial.upper == "T":
+    elif inicial == "T":
         return "Edwards"
-    elif inicial.upper == "U":
+    elif inicial == "U":
         return "Monsoon"
-    elif inicial.upper == "V":
+    elif inicial == "V":
         return "Peggy"
-    elif inicial.upper == "W":
+    elif inicial == "W":
         return "Sunny"
-    elif inicial.upper == "X":
+    elif inicial == "X":
         return "Estranja"
-    elif inicial.upper == "Y":
+    elif inicial == "Y":
         return "Roma"
-    elif inicial.upper == "Z":
+    elif inicial == "Z":
         return "Lima"
 
 def nacimientodrag(nacimiento):
@@ -136,8 +136,15 @@ def nacimientodrag(nacimiento):
         drag3 = "Toxic by Britney Spears"
     return drag3
 
+
+def mascotadrag():
+    mascotas = ["ABCDarius", "AlexPlosivo", "Elvis Cochuelo", "Igor Dito", "Hairy Paw-ter", "Ozzy Pawsbourne", "Kareem Abdul Ja-Bark"]
+    numero_random = random.randrange(len(mascotas))
+    return mascotas[numero_random]
+
+
 nombre = input("Nombre: ")
 apellido = input("Apellido: ")
 nacimiento = int(input("Año en que naciste: "))
 
-print(nombredrag(nombre), apellidodrag(apellido),'\n', "Canción que te representa:", nacimientodrag(nacimiento))
+print('\n', "Tu nombre de drag queen es: ", nombredrag(nombre), apellidodrag(apellido),'\n', "Canción que te representa:", nacimientodrag(nacimiento), '\n',"Tu mascota drag se llama: ", mascotadrag())
